@@ -1,0 +1,61 @@
+/*login_css*/
+.body{margin: 0 auto;}
+.login_bg{
+    width: 70rem;
+    height: 100%;
+    margin: 0 auto;
+    
+    background-image: url(../img/loginBg_ball_1801017.jpg);
+    background-size: contain;
+    background-position: center 0;
+    background-repeat: no-repeat;
+
+}
+    
+
+    .login_box{
+        margin:20px auto;
+        width: 50rem;
+        height: 40rem;
+        box-shadow: 8px 5px 20px 15px rgba(17, 17, 17, 0.46);
+        }
+
+        .link_banner_left{
+            width: 25rem;
+            height: 100%;
+            float: left;
+             background-color: transparent;
+            }
+        .login_system{
+            
+            width: 25rem;
+            height: 100%;
+            float: left;
+            background-color: #fff;
+           }
+
+            .login_main_text{
+                
+                height: 5rem;
+                display: flex;
+                
+}
+            .login_input_area{
+                height: 10rem;
+                display: flex;
+                
+}
+                .login_input_text{
+                    flex: 3;
+}
+                .login_submit_btn{
+                    flex: 1;
+}
+            .auto_login{}
+            .join_area{display: flex;}
+                .other_login{}
+            .no_join_btn{}
+
+
+
+.login_system div{border: 1px solid #000;}
