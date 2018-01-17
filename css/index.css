@@ -1,61 +1,128 @@
 /*login_css*/
-.body{margin: 0 auto;}
-.login_bg{
-    width: 70rem;
-    height: 100%;
+
+.borderY{border: 1px solid #fa0;}
+input{border: 1px solid #a0f;}
+body{background-color: #ccc;}
+body>section{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.changeImg{
+    
+    margin: 0 auto;
+    width: 60rem;
+    height: 50rem;
+    
+    position: absolute;
+    z-index: -100;
+    
+    padding: 5rem 0;
+}
+
+
+.changeImg ul{
+margin: 0 auto;
+    width: 60rem;
+    height: 50rem;
+    
+    
+    padding: 5rem 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.changeImg li:nth-child(1){
+    
+    position: absolute;
+    z-index: 10;
+    
+}
+.changeImg li:nth-child(2){
+    
+    position: absolute;
+    z-index: 20;
+    
+}
+
+
+.bgi{
+    margin: 0 auto;
+    width: 60rem;
+    height: 50rem;
+   
+    padding: 5rem 0;
+}
+.loginArea{
+    width: 40rem;
+    height: 35rem;
+    
     margin: 0 auto;
     
-    background-image: url(../img/loginBg_ball_1801017.jpg);
-    background-size: contain;
-    background-position: center 0;
-    background-repeat: no-repeat;
-
+    display: flex;
+    box-shadow: 5px 5px 10px 10px rgba(17, 17, 17, 0.41);
+    
 }
+    .leftBanner{
+        width: 60%;
+        height: 35rem;
+        background-color: transparent;
+}
+    .rightLoginBox{
+        width: 40%;
+        height: 35rem;
+        background-color: #fff;
+}
+
+.rightLoginBox>h1{
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    flex: 1;
+    
+}
+.rightLoginBox>.memberInputArea{
+    display: flex;
+    
+}
+.rightLoginBox>.memberInputArea>div{
+    border: 1px solid #000;
     
 
-    .login_box{
-        margin:20px auto;
-        width: 50rem;
-        height: 40rem;
-        box-shadow: 8px 5px 20px 15px rgba(17, 17, 17, 0.46);
-        }
-
-        .link_banner_left{
-            width: 25rem;
-            height: 100%;
-            float: left;
-             background-color: transparent;
-            }
-        .login_system{
-            
-            width: 25rem;
-            height: 100%;
-            float: left;
-            background-color: #fff;
-           }
-
-            .login_main_text{
-                
-                height: 5rem;
-                display: flex;
-                
 }
-            .login_input_area{
-                height: 10rem;
-                display: flex;
-                
+.rightLoginBox>.memberInputArea>div:nth-child(1){
+    flex: 5;
+    display: flex;
+    flex-direction: column;
 }
-                .login_input_text{
-                    flex: 3;
+.rightLoginBox>.memberInputArea>div:nth-child(2){
+    flex:2;
+
 }
-                .login_submit_btn{
-                    flex: 1;
+
+.rightLoginBox>.memberInputArea>div:nth-child(1) input{
+    border: 1px solid #f0a;
+    margin: 0.3rem;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 3px;
+    
 }
-            .auto_login{}
-            .join_area{display: flex;}
-                .other_login{}
-            .no_join_btn{}
+.birdieGOLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.birdieGOLogin input{
+    background-color: #fff;
+    
+}
 
-
-
-.login_system div{border: 1px solid #000;}
+.rightLoginBox
+.rightLoginBox
