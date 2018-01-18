@@ -8,7 +8,7 @@
 		<!--reset-->
 		<link rel="stylesheet" href="./css/bin/reset.css">
 		<link rel="stylesheet" href="./css/index.css">
-
+        <link rel="stylesheet" type="text/css" href="font/flaticon.css"> 
 
 		<script src="js/jquery/jquery-1.12.4.min.js"></script>
 		<script src="js/jquery/jquery-ui.min.js"></script>
@@ -55,7 +55,7 @@
                            <div>회원가입 하면<br />적립금 <span>1,000원</span></div>
                        </div>
                    </div>
-                   <div class="rightLoginBox ">
+                   <div class="rightLoginBox "  style="display: block">
                        <div class="header">
                        <h1>BIRDIECHANCE.COM</h1>
                         <h2>로그인</h2>
@@ -94,6 +94,24 @@
                        <div class="loginBTN nomemb" ><button type="button">비회원 로그인</button></div>
                        
                    </div>
+                   
+                   <div class="rightLoginBox nomembLoginArea" style="display: none">
+                     
+                      <div class="header">
+                       <h1>BIRDIECHANCE.COM</h1>
+                       <h2>비회원 로그인</h2>
+                       <button><i class="flaticon-clear-button"></i></button>
+                      </div>
+                      
+                      <div class="potentialCustomer">
+                        <input type="text" placeholder="주문자명">
+                        <input type="text" placeholder="이메일">
+                        <input type="text" placeholder="휴대폰 번호">
+                      </div>
+                      <div class="loginBTN nomembSubmit">
+                         <input type="submit" value="Login">
+                       </div>
+                    </div>
 	               
 	           </section>
 	   </section>

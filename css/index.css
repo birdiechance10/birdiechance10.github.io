@@ -332,3 +332,59 @@ body>section .blackOpacity_bottom{
    
     
 }
+.nomembLoginArea{}
+.nomembLoginArea .header{position: relative;}
+.nomembLoginArea .header button{
+    width:4rem;
+    height: 4rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10000;
+}
+.nomembLoginArea .header button i{
+    font-size: 1.5rem;
+}
+
+.nomembLoginArea .potentialCustomer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top:1px solid #eee;
+    
+    height: 8rem;
+     padding: 2rem 0.5rem 0.5rem 0.5rem;
+}
+.nomembLoginArea .potentialCustomer input{
+    width: 20rem;
+    border: none;
+    background-color: #fff;
+    border: 1px solid #eee;
+    height:3rem;
+    margin-bottom: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(150, 142, 142, 0.1);
+}
+
+.nomembSubmit{
+}
+.nomembSubmit input{
+    box-shadow: 1px 1px 5px 1px rgba(8, 8, 8, 0.21);
+    width:17rem;
+    height: 2.3rem;
+    margin-top: 1rem;
+    border-radius: 3px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    background-color: #1780ea;
+    
+}
+.potentialCustomer input::-webkit-input-placeholder {
+    font-size: 0.8rem;
+    line-height: 3;
+    text-indent: 0.5rem;
+}

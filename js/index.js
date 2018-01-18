@@ -1,7 +1,6 @@
 $(function () {
 
 
-    console.log($('.changeImg img').attr("src"));
 
     function switchBG() {
         
@@ -17,10 +16,30 @@ $(function () {
             
         }
     }
+    
+    $('.nomemb button').click(function(){
+        
+        
+        $('.rightLoginBox').css('display','none');
+        $('.nomembLoginArea').css('display','block');
+        
+    });
+    
+    $('.nomembLoginArea .header button').click(function(){
+        
+        
+        $('.rightLoginBox').css('display','block');
+        
+        $('.nomembLoginArea').css('display','none');
+    });
+    
+    
 
     setInterval(function () {
 
         switchBG();
 
     }, 500);
+    
+    
 });
