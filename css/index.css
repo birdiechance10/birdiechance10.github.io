@@ -106,11 +106,36 @@ body>section .blackOpacity_bottom{
     box-shadow: 5px 5px 8px 5px rgba(17, 17, 17, 0.29);
     
 }
-    .leftBanner{
+
+
+/*광고배너 영역*/
+
+.leftBanner{
         width: 60%;
         height: 35rem;
         background-color: transparent;
 }
+.leftBanner>div{
+    margin-top: 7rem;
+    margin-left: 3rem;     /*광고문구 위치 조정 마진값*/
+}
+.leftBanner>div>div:nth-child(1){
+    width: 5rem;
+    height: 6px;
+    background-color: #fff;   /*배너 글자 장식*/
+    margin-bottom: 1rem;
+}
+.leftBanner>div>div{
+    font-weight: 400;
+    font-size: 2.5rem;                         /*배너 글씨 내용*/
+    color: #fff;
+    text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.76);
+}
+.leftBanner>div>div span{font-size: 3rem;font-weight: 600}
+
+
+/*로그인 정보입력 오른쪽 창*/
+
     .rightLoginBox{
         width: 40%;
         height: 35rem;
@@ -209,6 +234,8 @@ body>section .blackOpacity_bottom{
 }
 
 
+/*로그인 자동저장 및 비밀번호/아이디찾기*/
+
 .autoNjoinNfind{
     display: flex;
     border-bottom: 1px solid #eee;
@@ -265,6 +292,11 @@ body>section .blackOpacity_bottom{
     color: #777;
     
 }
+
+
+
+/*다른 로그인 방법*/
+
 .loginBTN{
     width: 100%;
     display: flex;
