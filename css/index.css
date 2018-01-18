@@ -37,17 +37,19 @@ body>section .blackOpacity_right{
 }
 body>section .blackOpacity_top{
     
-    width: 100%;
+    width: 60rem;
     height: calc((100% - 35rem) / 2);
     top:0;
-    right: 0;
+    right: 50%;
+    margin-right: -30rem;
 }
 body>section .blackOpacity_bottom{
     
-    width: 100%;
+    width: 60rem;
     height: calc((100% - 35rem) / 2);
     bottom:0;
-    right: 0;
+    right: 50%;
+    margin-right: -30rem;
 }
 
 

@@ -26,7 +26,10 @@
 	<body>
 	   <header></header>
 	   <section>
-         
+         <div class="blackOpacity blackOpacity_left"></div>
+         <div class="blackOpacity blackOpacity_right"></div>
+         <div class="blackOpacity blackOpacity_top"></div>
+         <div class="blackOpacity blackOpacity_bottom"></div>
           <!--백그라운드 이미지 체인지 영역-->
            <div class="changeImg">
               <ul>
@@ -48,36 +51,43 @@
 	           <section class="loginArea">
                    <div class="leftBanner"></div>
                    <div class="rightLoginBox ">
-                       <h1>LOGIN</h1>
+                       <div class="header">
+                       <h1>BIRDIECHANCE.COM</h1>
+                        <h2>로그인</h2>
+                       </div>
                         <form>
                        <div class="memberInputArea">
                            
                            <div class="idpwInput">
                                <div>
-                                   <input type="text">
-                                   <input type="text">
+                                   <input type="text" placeholder="아이디">
+                                   <input type="text" placeholder="비밀번호">
                                </div>
                                <div class="birdieGOLogin">
                                    <input type="submit" value="Login">
                                </div>
                            </div>
-                            <div class="autoLogin">
-                                <input type="checkbox" id="autoLogin" name="autoLogin" value="autoLogin">
-                                <label for="autoLogin">로그인 상태 유지</label>
-                       
-                           </div>
+                            <div class="autoNjoinNfind">
+                                <div class="autoLogin">
+                                    <input type="checkbox" id="autoLogin" name="autoLogin" value="autoLogin">
+                                    <label for="autoLogin">로그인 상태 유지</label>
+                                                       
+                                </div>
+                                <div class="joinNfindArea">
+                                   <div>
+                                   <a href="#">회원가입</a>
+                                    </div>
+                                    <div></div>
+                                    <div>
+                                   <a href="#">ID/PW 찾기</a>
+                                    </div>
+                                </div>
+                            </div>
                        </div>
                          </form>
-                       <div class="joinNfindArea">
-                           <div>
-                               <a href="#">회원가입</a>
-                           </div>
-                           <div>
-                               <a href="#">ID/PW 찾기</a>
-                           </div>
-                       </div>
-                       <div class="loginNaver" ><button type="button"><img src="./img/naverEasyLogin.png" style="width: 15rem;" alt=""></button></div>
-                       <div><button type="button">비회원로그인</button></div>
+                       <div class="loginBTN naverLogin" ><button type="button"><img src="./img/naver_logo.png" style="width: 2rem;" alt=""> 네이버로 로그인하기</button></div>
+                       <div class="loginBTN nomemb" ><button type="button">비회원 로그인</button></div>
+                       
                    </div>
 	               
 	           </section>
