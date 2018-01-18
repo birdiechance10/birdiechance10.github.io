@@ -26,43 +26,61 @@
 	<body>
 	   <header></header>
 	   <section>
+         
+          <!--백그라운드 이미지 체인지 영역-->
            <div class="changeImg">
               <ul>
                   <li style="display:block">
-                      <img src="./img/loginBg_ball_1801017.jpg" alt="">
+                      <img src="./img/loginBg_ball_01_1801017.jpg" alt="">
                   </li>
                   <li style="display:none">
-                      <img src="./img/2.jpg" alt="">
+                      <img src="./img/loginBg_ball_02_1801018.jpg" alt="">
                   </li>
                   
                   
               </ul>
            
            </div>
-	       <div class="bgi">
+           
+           <!-- -->
+           
+           
 	           <section class="loginArea">
                    <div class="leftBanner"></div>
                    <div class="rightLoginBox ">
-                       <h1>login</h1>
+                       <h1>LOGIN</h1>
+                        <form>
                        <div class="memberInputArea">
-                           <div>
-                               <input type="text">
-                               <input type="text">
+                           
+                           <div class="idpwInput">
+                               <div>
+                                   <input type="text">
+                                   <input type="text">
+                               </div>
+                               <div class="birdieGOLogin">
+                                   <input type="submit" value="Login">
+                               </div>
                            </div>
-                           <div class="birdieGOLogin">
-                               <form name="input" method="post" action="" >
-                                    <input type="submit" value="로그인">
-                                </form>
+                            <div class="autoLogin">
+                                <input type="checkbox" id="autoLogin" name="autoLogin" value="autoLogin">
+                                <label for="autoLogin">로그인 상태 유지</label>
+                       
                            </div>
                        </div>
-                       <div class="autoLogin borderY">자동로그인</div>
-                       <div class="joinNfindArea borderY"></div>
-                       <div ><button type="button">네이버로그인</button></div>
+                         </form>
+                       <div class="joinNfindArea">
+                           <div>
+                               <a href="#">회원가입</a>
+                           </div>
+                           <div>
+                               <a href="#">ID/PW 찾기</a>
+                           </div>
+                       </div>
+                       <div class="loginNaver" ><button type="button"><img src="./img/naverEasyLogin.png" style="width: 15rem;" alt=""></button></div>
                        <div><button type="button">비회원로그인</button></div>
                    </div>
 	               
 	           </section>
-	       </div>
 	   </section>
 	    
 	    

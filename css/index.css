@@ -2,67 +2,106 @@
 
 .borderY{border: 1px solid #fa0;}
 input{border: 1px solid #a0f;}
-body{background-color: #ccc;}
+body{width: 100%;height: 100%; background-color: #eee;margin: 0 auto;}
+
 body>section{
-    
+    width: 1500px;
+    height: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    margin: 0 auto;
 }
+body>section .blackOpacity{
+    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -10;
+    background-color: rgba(0, 0, 0, 0.24);
+}
+body>section .blackOpacity_left{
+    
+    width: calc((100% - 60rem) / 2);
+    height: 100%;
+    top:0;
+    left: 0;
+}
+body>section .blackOpacity_right{
+    
+    width: calc((100% - 60rem) / 2);
+    height: 100%;
+    top:0;
+    right: 0;
+}
+body>section .blackOpacity_top{
+    
+    width: 100%;
+    height: calc((100% - 35rem) / 2);
+    top:0;
+    right: 0;
+}
+body>section .blackOpacity_bottom{
+    
+    width: 100%;
+    height: calc((100% - 35rem) / 2);
+    bottom:0;
+    right: 0;
+}
+
+
+
+
+
+/*백그라운드 이미지 체인지 영역*/
 .changeImg{
     
-    margin: 0 auto;
-    width: 60rem;
-    height: 50rem;
     
     position: absolute;
     z-index: -100;
+    top: 0;
+    left: 50%;
+    margin-left: -750px;
     
-    padding: 5rem 0;
 }
+    .changeImg ul{
+        margin: 0 auto;
+        
+        position: relative;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+        .changeImg li{
+             position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .changeImg li:nth-child(1){
+            
+            z-index: 10;
+            
+        }
+        .changeImg li:nth-child(2){
+            
+            z-index: 20;
+            
+        }
+    
 
 
-.changeImg ul{
-margin: 0 auto;
-    width: 60rem;
-    height: 50rem;
-    
-    
-    padding: 5rem 0;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.changeImg li:nth-child(1){
-    
-    position: absolute;
-    z-index: 10;
-    
-}
-.changeImg li:nth-child(2){
-    
-    position: absolute;
-    z-index: 20;
-    
-}
 
-
-.bgi{
-    margin: 0 auto;
-    width: 60rem;
-    height: 50rem;
-   
-    padding: 5rem 0;
-}
 .loginArea{
-    width: 40rem;
+    width: 60rem;
     height: 35rem;
     
-    margin: 0 auto;
+    margin: 13.5rem auto;
     
     display: flex;
-    box-shadow: 5px 5px 10px 10px rgba(17, 17, 17, 0.41);
+    box-shadow: 5px 5px 8px 5px rgba(17, 17, 17, 0.29);
     
 }
     .leftBanner{
@@ -76,53 +115,185 @@ margin: 0 auto;
         background-color: #fff;
 }
 
-.rightLoginBox>h1{
-    height: 5rem;
+.rightLoginBox>.header{
+    height: 14rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     
+    font-size: 1.9rem;
+    font-weight: 600;
     flex: 1;
     
 }
+.rightLoginBox>.header>h2{
+    font-size: 1.3rem;
+    color: #777;
+    margin-top: 0.6rem;
+    font-weight: 600;
+    
+}
+
+
 .rightLoginBox>.memberInputArea{
     display: flex;
     
 }
-.rightLoginBox>.memberInputArea>div{
-    border: 1px solid #000;
-    
 
-}
-.rightLoginBox>.memberInputArea>div:nth-child(1){
-    flex: 5;
+.rightLoginBox>.memberInputArea>div{
     display: flex;
     flex-direction: column;
-}
-.rightLoginBox>.memberInputArea>div:nth-child(2){
-    flex:2;
-
-}
-
-.rightLoginBox>.memberInputArea>div:nth-child(1) input{
-    border: 1px solid #f0a;
-    margin: 0.3rem;
-    width: 10rem;
-    height: 2rem;
-    border-radius: 3px;
     
 }
+
+.idpwInput{
+    display: flex;
+    border-top: 1px solid #ddd;
+    margin: 0 1rem;
+    padding: 2rem 0 0.5rem 0;
+}
+.idpwInput>div:nth-child(1){
+    display: flex;
+    align-items: center;
+}
+.idpwInput>div:nth-child(1) input{
+    width: 14rem;
+    height: 2.5rem;
+    margin: 0.2rem;
+    box-shadow: 1px 1px 1px 1px rgba(153, 153, 153, 0.3);
+    border: none;
+    border-radius: 4px;
+    
+}
+
+
+.idpwInput>div:nth-child(1) input::-webkit-input-placeholder {
+    font-size: 0.8rem;
+    line-height: 3;
+    text-indent: 0.5rem;
+}
+.idpwInput>div:nth-child(1){
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.idpwInput>div:nth-child(2){
+    flex: 1;
+    
+}
+
+
 .birdieGOLogin{
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
+    margin: 3px;
+   
     
 }
 .birdieGOLogin input{
-    background-color: #fff;
+    width: 100%;
+    height: 5.5rem;
+     background-color: rgb(41,158,229);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px 1px rgba(153, 153, 153, 0.5);
+}
+
+
+.autoNjoinNfind{
+    display: flex;
+    border-bottom: 1px solid #eee;
+    font-size: 0.8rem;
+    text-align: right;
+    
+}
+.autoLogin{
+    flex: 1;
+    margin: 0 1.4rem;
+    font-size: 0.9rem;
+    padding: 0.8rem 0;
+    display: flex;
+    align-items: center;
+    
+    
+}
+.autoLogin label{font-size: 0.8rem;color: #777;}
+.autoLogin input{
+    
+    margin-right: 0.5rem;
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+.joinNfindArea{
+    flex: 1;
+   display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1.3rem;
+}
+.joinNfindArea>div:nth-child(1){
+    text-align: right;
+   
+    padding-right: 0.5rem;
+    
+    
+}
+.joinNfindArea>div:nth-child(2){
+    width: 1px;
+    height: 1rem;
+    background-color: #777;
+    margin-right: 0.5rem;
+    
+}
+.joinNfindArea>div:nth-child(3){
+    text-align: right;
+}
+
+.joinNfindArea a{
+    line-height: 2rem;
+    color: #777;
+    
+}
+.loginBTN{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.loginBTN button{
+    width:17rem;
+    height: 2.3rem;
+    margin-top: 1rem;
+    border-radius: 3px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+}
+.naverLogin button{
+    
+    background-color: #1AC54C;
+    
+}
+.naverLogin button img{
+    margin-right: 0.5rem;
     
 }
 
-.rightLoginBox
-.rightLoginBox
+.nomemb button{
+    background-color: #777;
+   
+    
+}
