@@ -3,26 +3,31 @@
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta charset="UTF-8">
-		
-		
+
+
 		<!--reset-->
 		<link rel="stylesheet" href="./css/bin/reset.css">
 		<link rel="stylesheet" href="./css/index.css">
-        <link rel="stylesheet" type="text/css" href="font/flaticon.css"> 
+
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <!--[if IE 7]>
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome-ie7.min.css">
+        <![endif]-->
+
 
 		<script src="js/jquery/jquery-1.12.4.min.js"></script>
 		<script src="js/jquery/jquery-ui.min.js"></script>
-		
+
 		<!--[if lte IE 9]>
 			<script src="ie/html5shiv/src/html5shiv.js"></script>
 			<script src="ie/ie7/IE8.js"></script>
 			<script src="ie/PIE/PIE_IE678.js"></script>
 			<script src="ie/Respond/src/respond.js"></script>
 		<![endif]-->
-		
+
 		<title>login</title>
 	</head>
-	
+
 	<body>
 	   <header></header>
 	   <section>
@@ -39,20 +44,31 @@
                   <li style="display:none">
                       <img src="./img/loginBg_ball_02_1801018.jpg" alt="">
                   </li>
-                  
-                  
+
+
               </ul>
-           
+
            </div>
-           
+
            <!-- -->
-           
-           
+
+
 	           <section class="loginArea">
                    <div class="leftBanner">
                        <div>
-                            <div></div>
-                           <div>회원가입 하면<br />적립금 <span>1,000원</span></div>
+                           
+                           <div >
+                                   <span class="smallTxt" style="font-size: 1.4rem;">회원가입하면</span>
+                                   <div class="deco" style="margin: 0.5rem 0 3rem 0"></div>
+                                   <span class="smallTxt" style="font-size: 1.8rem;">구매할때마다</span>
+                                   <span class="smallTxt" style="font-size: 2.2rem;font-weight: 800">후기쓸때마다</span>
+                           </div>
+                           
+                           <div class="bigTxt">
+                               <span style="font-weight: bolder; letter-spacing: -7px;margin-left: -9px">
+                                   1,000원!
+                               </span>
+                           </div>
                        </div>
                    </div>
                    <div class="rightLoginBox "  style="display: block">
@@ -62,61 +78,135 @@
                        </div>
                         <form>
                        <div class="memberInputArea">
-                           
+
                            <div class="idpwInput">
                                <div>
                                    <input type="text" placeholder="아이디">
                                    <input type="password" placeholder="비밀번호">
                                </div>
                                <div class="birdieGOLogin">
-                                   <input type="submit" value="Login">
+                                   <input type="submit" value="로그인">
                                </div>
                            </div>
                             <div class="autoNjoinNfind">
                                 <div class="autoLogin">
                                     <input type="checkbox" id="autoLogin" name="autoLogin" value="autoLogin">
-                                    <label for="autoLogin">로그인 상태 유지</label>
-                                                       
+                                    <label for="autoLogin">아이디 저장</label>
+
                                 </div>
                                 <div class="joinNfindArea">
                                    <div>
-                                   <a href="#">회원가입</a>
+                                   <a href="http://birdiechance.com/member/join_simple.asp">회원가입</a>
                                     </div>
                                     <div></div>
-                                    <div>
-                                   <a href="#">ID/PW 찾기</a>
+                                    <div class="findMyinfoBtn">
+                                   <button >ID/PW 찾기</button>
                                     </div>
                                 </div>
                             </div>
                        </div>
                          </form>
-                       <div class="loginBTN naverLogin" ><button type="button"><img src="./img/naver_logo.png" style="width: 2rem;" alt=""> 네이버로 로그인하기</button></div>
-                       <div class="loginBTN nomemb" ><button type="button">비회원 로그인</button></div>
-                       
+                       <div class="loginBTN naverLogin" ><!--<button type="button"><img src="./img/naver_logo.png" style="width: 2rem;" alt=""> 네이버 간편 로그인</button>--></div>
+                       <div class="loginBTN nomemb" style="padding-top:15px;"><button type="button">비회원 로그인</button></div>
+
                    </div>
-                   
+
+
+
+                   <!--비회원 로그인창 (기본은 display:none)-->
                    <div class="rightLoginBox nomembLoginArea" style="display: none">
-                     
+
                       <div class="header">
                        <h1>BIRDIECHANCE.COM</h1>
                        <h2>비회원 로그인</h2>
-                       <button><i class="flaticon-clear-button"></i></button>
+                       <button><i class="icon-remove-sign" style="font-size: 2.5rem;color: #aaa"></i></button>
                       </div>
-                      
+
                       <div class="potentialCustomer">
                         <input type="text" placeholder="주문자명">
                         <input type="text" placeholder="이메일">
                         <input type="text" placeholder="휴대폰 번호">
                       </div>
                       <div class="loginBTN nomembSubmit">
-                         <input type="submit" value="Login">
+                         <input type="submit" value="로그인">
                        </div>
                     </div>
-	               
+
+                    <!--아이디/패스워드찾기 창 (기본은 display:none)-->
+                    <div class="findMyinfoArea" style="display: none">
+
+                      <div class="IDfinder">
+
+                          <div class="header">
+                           <h1>아이디를 잊으셨나요?</h1>
+                           <button><i class="icon-remove-sign" style="font-size: 2.5rem;color: #aaa"></i></button>
+                          </div>
+
+                          <div class="findID">
+                            <input class="user_name" type="text" placeholder="이름">
+                            <div class="email_input">
+                                <input type="text"  name="str_email01" id="str_email01ID" placeholder="아이디">
+                                <span>@</span><input type="text" name="str_email02" id="str_email02ID" placeholder="" >
+
+                                <select name="selectEmail" id="selectEmailID">
+                                  <option value="1">직접입력</option>
+                                  <option value="naver.com">네이버</option>
+                                  <option value="daum.net">다음</option>
+                                  <option value="gmail.com">G메일</option>
+                                  <option value="hotmail.com">핫메일</option>
+                                  <option value="nate.com">네이트</option>
+
+                                  </select>
+
+
+                            </div>
+                          </div>
+                          <div class="findIDsubmit">
+                             <input type="submit" value="아이디 찾기">
+                           </div>
+                           </div>
+
+                       <div class="PWfinder">
+                          <div class="header">
+                           <h1>비밀번호를 잊으셨나요?</h1>
+
+                          </div>
+
+                          <div class="findID">
+                            <input class="user_name" type="text" style="margin-bottom: 0.5rem" placeholder="아이디">
+                            <input class="user_name"  type="text" placeholder="이름">
+                            <div class="email_input">
+                                <input type="text"  name="str_email01" id="str_email01PW" placeholder="아이디">
+                                <span>@</span><input type="text" name="str_email02" id="str_email02PW" placeholder="" >
+
+                                <select name="selectEmail" id="selectEmailPW">
+                                  <option value="1">직접입력</option>
+                                  <option value="naver.com">네이버</option>
+                                  <option value="daum.net">다음</option>
+                                  <option value="gmail.com">G메일</option>
+                                  <option value="hotmail.com">핫메일</option>
+                                  <option value="nate.com">네이트</option>
+
+                                  </select>
+
+
+                            </div>
+                          </div>
+                          <div class="findIDsubmit">
+                             <input type="submit" value="비밀번호 찾기">
+                           </div>
+
+
+                       </div>
+
+
+                    </div>
+
 	           </section>
 	   </section>
-	    
-	    
+
+
 	    <script src="js/index.js"></script>
+
     </body>
 </html>

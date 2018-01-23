@@ -1,5 +1,10 @@
 /*login_css*/
 
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+/*font-family: 'Nanum Gothic', sans-serif;*/
+body{font-family: 'Nanum Gothic', sans-serif;
+}
+
 .borderY{border: 1px solid #fa0;}
 input{border: 1px solid #a0f;}
 body{width: 100%;height: 100%; background-color: #eee;margin: 0 auto;}
@@ -103,7 +108,7 @@ body>section .blackOpacity_bottom{
     margin: 13.5rem auto;
     
     display: flex;
-    box-shadow: 5px 5px 8px 5px rgba(17, 17, 17, 0.29);
+    box-shadow: 0px 14px 5px 5px rgba(0, 0, 0, 0.4);
     
 }
 
@@ -116,23 +121,26 @@ body>section .blackOpacity_bottom{
         background-color: transparent;
 }
 .leftBanner>div{
-    margin-top: 7rem;
+    margin-top: 2.3rem;
     margin-left: 3rem;     /*광고문구 위치 조정 마진값*/
 }
-.leftBanner>div>div:nth-child(1){
-    width: 5rem;
-    height: 6px;
-    background-color: #fff;   /*배너 글자 장식*/
-    margin-bottom: 1rem;
-}
-.leftBanner>div>div{
-    font-weight: 400;
-    font-size: 2.5rem;                         /*배너 글씨 내용*/
-    color: #fff;
-    text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.76);
-}
-.leftBanner>div>div span{font-size: 3rem;font-weight: 600}
 
+.smallTxt{color:#fff;
+    line-height: 3rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px #000;
+}
+.bigTxt{color:#fff;
+    font-weight: 600;
+    font-size: 5rem;
+    margin-top: 1.5rem;
+     text-shadow: 1px 1px 1px #000;
+}
+.deco{
+    width: 2rem;
+    height: 2px;
+    background-color: #fff;
+}
 
 /*로그인 정보입력 오른쪽 창*/
 
@@ -149,7 +157,7 @@ body>section .blackOpacity_bottom{
     flex-direction: column;
     align-items: center;
     
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     font-weight: 600;
     flex: 1;
     
@@ -189,8 +197,9 @@ body>section .blackOpacity_bottom{
     height: 2.5rem;
     margin: 0.2rem;
     box-shadow: 1px 1px 1px 1px rgba(153, 153, 153, 0.3);
-    border: none;
-    border-radius: 4px;
+    border: 1px solid #ccc;
+    
+    border-radius:2px;
     
 }
 
@@ -199,6 +208,7 @@ body>section .blackOpacity_bottom{
     font-size: 0.8rem;
     line-height: 3;
     text-indent: 0.5rem;
+    color: #aaa;
 }
 .idpwInput>div:nth-child(1){
     flex: 2;
@@ -224,8 +234,10 @@ body>section .blackOpacity_bottom{
 }
 .birdieGOLogin input{
     width: 100%;
-    height: 5.5rem;
+    height: 5.4rem;
      background-color: rgb(41,158,229);
+    border: 2px solid rgb(41,158,229);
+    box-sizing: content-box;
     color: #fff;
     font-size: 1.2rem;
     font-weight: 600;
@@ -315,11 +327,10 @@ body>section .blackOpacity_bottom{
     align-items: center;
     justify-content: center;
     color: #fff;
-    font-weight: 600;
 }
 .naverLogin button{
     
-    background-color: #1AC54C;
+    background-color: #2AC632;
     
 }
 .naverLogin button img{
@@ -353,14 +364,14 @@ body>section .blackOpacity_bottom{
     justify-content: center;
     border-top:1px solid #eee;
     
-    height: 8rem;
+    height: 10rem;
      padding: 2rem 0.5rem 0.5rem 0.5rem;
 }
 .nomembLoginArea .potentialCustomer input{
     width: 20rem;
     border: none;
     background-color: #fff;
-    border: 1px solid #eee;
+    border: 1px solid #ccc;
     height:3rem;
     margin-bottom: 5px;
     box-shadow: 1px 1px 1px 1px rgba(150, 142, 142, 0.1);
@@ -370,8 +381,8 @@ body>section .blackOpacity_bottom{
 }
 .nomembSubmit input{
     box-shadow: 1px 1px 5px 1px rgba(8, 8, 8, 0.21);
-    width:17rem;
-    height: 2.3rem;
+    width:20rem;
+    height: 3rem;
     margin-top: 1rem;
     border-radius: 3px;
     
@@ -379,7 +390,7 @@ body>section .blackOpacity_bottom{
     align-items: center;
     justify-content: center;
     color: #fff;
-    font-weight: 600;
+    font-weight: 300;
     background-color: #1780ea;
     
 }
@@ -387,4 +398,112 @@ body>section .blackOpacity_bottom{
     font-size: 0.8rem;
     line-height: 3;
     text-indent: 0.5rem;
+    color: #aaa;
+}
+
+/*아이디비번찾기 영역*/
+.findMyinfoArea{
+    width: 40%;
+ background-color: #fff;   
+}
+
+.findMyinfoArea .header{
+    position: relative;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    font-size: 1.3rem;
+    font-weight: 600;
+    flex: 1;
+}
+
+.findMyinfoArea .header button{
+    width:4rem;
+    height: 4rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10000;
+}
+.findMyinfoArea .header button i{
+    font-size: 1.5rem;
+}
+.findID{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.findID input{
+    
+    box-shadow: 1px 1px 1px 1px rgba(153, 153, 153, 0.3);
+    border: 1px solid #ccc;
+}
+
+.findID input::-webkit-input-placeholder {
+    font-size: 0.8rem;
+    line-height: 3;
+    text-indent: 0.5rem;
+    color: #aaa;
+}
+
+.user_name{
+    width: 21.5rem;
+    height: 2.5rem;
+}
+.email_input{
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+.email_input span{
+    font-size: 1.2rem;
+    margin: 0 0.3rem;
+    line-height: 2.5rem;
+    color: #777;
+    
+}
+
+.email_input input{
+    display: flex;
+    width:6.5em;
+    height: 2.5rem;
+    
+    
+}
+
+.email_input select{
+    width: 6.3rem;
+    margin-left: 0.4rem;
+    box-shadow: 1px 1px 1px 1px rgba(153, 153, 153, 0.3);
+    border: 1px solid #ccc;
+    
+}
+.findIDsubmit{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.findIDsubmit input{
+    width:21.5rem;
+    height: 3rem;
+    color: #fff;
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-weight: 300;
+    background-color: #1780ea;
+     box-shadow: 1px 1px 5px 1px rgba(8, 8, 8, 0.21);
+    margin-top: 0.5rem;
+    border-radius: 3px;
+    
+    
+}
+.PWfinder{
+    border-top: 1px solid #eee;
+    margin-top: 1rem
 }
