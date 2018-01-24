@@ -8,9 +8,9 @@ height: 100%;
 }
 body>div{
     width: 24rem;
-    height: 100%;
+    height: 26rem;
     padding: 10px;
-    background-color: #efefef;
+    background-color: rgba(239, 239, 239, 0.42);
 }
 
 h1{
@@ -64,13 +64,20 @@ h1{
 .costomerAgreeArea{}
 .costomerAgreeText{
     width: 100%;
-    height: 15rem; 
+    height: 10rem; 
     background-color: #fff;
     overflow-y: auto;
 }
 
-.infoAgreeArea{}
-.marketingAgreeArea{}
+
+.infoAgreeAgreeText{width: 100%;
+    height: 10rem; 
+    background-color: #fff;
+    overflow-y: auto;}
+.marketingAgreeText{width: 100%;
+    height: 10rem; 
+    background-color: #fff;
+    overflow-y: auto;}
 
 
 .Gologin{
@@ -88,3 +95,6 @@ h1{
 
 .block{height: 15rem;}
 .none{display: none;}
+.hidden{width: 0; height: 0; display: block; overflow: hidden;}
+
+button{background-color: transparent;border: 0;}
