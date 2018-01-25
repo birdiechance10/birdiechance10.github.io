@@ -12,7 +12,7 @@ height: 100%;
 }
 
 .agreeTxt{
-    width: 34rem;
+    width: 26.8rem;
     height: auto;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
@@ -22,6 +22,7 @@ height: 100%;
     font-size: 0.9rem;
     line-height: 1.5rem;
    background-color: rgba(255, 255, 255, 0.54);
+    box-sizing: border-box;
 }
 .naverAgree img{
     width: 28rem;
@@ -40,4 +41,4 @@ height: 100%;
     
     
 }
-.close{margin: 3rem 0;}
+.close{padding: 1rem 0;margin-top: 1rem; border-top: 1px solid #ccc;}
